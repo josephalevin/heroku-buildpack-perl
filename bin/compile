@@ -38,4 +38,3 @@ if [ -d $BUILD_DIR/local ]; then
   cp -a $BUILD_DIR/local $CACHE_DIR/local
 fi
 
-du $BUILD_DIR
