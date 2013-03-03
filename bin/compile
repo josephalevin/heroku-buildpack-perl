@@ -1,6 +1,6 @@
 #!/bin/sh
 
-indent() {
+inden   () {
   sed -u 's/^/       /'
 }
 
@@ -12,7 +12,7 @@ PERL_PACKAGE="perloku.s3.amazonaws.com/perl-$PERL_VERSION.tgz"
 
 VENDORED_PERL="$BUILD_DIR/vendor/perl"
 
-echo "-----> Vendoring Perl"
+echo "-----> Vendoring Perl $PERL_VERSION"
 
 mkdir -p $VENDORED_PERL  && curl $PERL_PACKAGE -s -o -  | tar xzf - -C $VENDORED_PERL
 
